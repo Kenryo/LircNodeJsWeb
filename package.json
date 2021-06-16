@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "/opt/nodejs/bin/nodemon ./bin/www"
+    "start": "node ./bin/www",
+    "devstart": "NODE_ENV=production /usr/bin/nodemon ./bin/www -e js,mjs,json,pug,css"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
@@ -11,12 +12,12 @@
     "config": "^1.29.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
-    "express": "~4.15.5",
+    "express": "^4.17.1",
     "jquery": "^3.2.1",
     "morgan": "~1.9.0",
-    "pug": "2.0.0-beta11",
+    "pug": "^3.0.2",
     "serve-favicon": "~2.4.5",
-    "sleep": "^5.1.1"
+    "sleep": "^6.3.0"
   },
   "author": {
     "name": "bbtinkerer",
